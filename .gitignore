@@ -1,0 +1,38 @@
+# Ignore Terraform state and cache files
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
+
+# Ignore Go build artifacts
+bootstrap
+*.out
+*.exe
+
+# Ignore compiled binary and function deployment zip
+function.zip
+
+# Ignore local Go environment and build cache
+go.sum
+go.mod
+
+# Ignore generated files from entgo
+/ent/schema/*_ent.go
+/ent/schema/*_generated.go
+/ent/migrate
+
+# Node_modules (if any frontend or dependencies exist, adjust if needed)
+/node_modules/
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore log files and other transient files
+*.log
